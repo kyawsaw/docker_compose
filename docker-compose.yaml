@@ -17,7 +17,7 @@ services:
     container_name: nginx.uniq
     volumes:
       - "./nginx/uniq_conf:/etc/nginx/conf.d/"
-      - "./code/:/var/www/html/"
+      - "./code/phpinfo:/var/www/html/phpinfo"
       - "./code/demo:/var/www/html/demo"
       - "/etc/letsencrypt/:/etc/letsencrypt/"
       - "./logs/nginx:/var/log/nginx"
